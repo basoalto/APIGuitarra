@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "027a3fc9-d2af-4c66-bd04-64ef802170ff",
+		"name": "obteniedo datos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "productos",
+			"item": [
+				{
+					"name": "/products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/products",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"acustic\",\r\n    \"marca\": \"escorpion\",\r\n    \"imgURL\": \"https://m.media-amazon.com/images/I/81dWuf4ET3L._AC_SX679_.jpg\",\r\n    \"valor\": 9000,\r\n    \"stock\": 10\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/products/:productsId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"acustica\",\r\n    \"marca\": \"escorpion\",\r\n    \"imgURL\": \"https://m.media-amazon.com/images/I/81dWuf4ET3L._AC_SX679_.jpg\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/products/628d362a421db3360b7a83ae",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"products",
+								"628d362a421db3360b7a83ae"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/products/:productsId",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"acustica\",\r\n    \"marca\": \"escorpion\",\r\n    \"imgURL\": \"https://m.media-amazon.com/images/I/81dWuf4ET3L._AC_SX679_.jpg\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/products/api/628cfafbe0db01962700b212",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"products",
+								"api",
+								"628cfafbe0db01962700b212"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sucursales",
+			"item": [
+				{
+					"name": "/users",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "/api/auth/signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/auth/asignup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"auth",
+								"asignup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/auth/signin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/auth/asignup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"auth",
+								"asignup"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
